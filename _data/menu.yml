@@ -1,0 +1,72 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+
+  - title: 推荐
+    entries:
+    - title: Jekyll主题
+      url: https://github.com/feeshy/less-style-please
+    - title: PPI计算器
+      url: /ppi-calc/
+    - title: Ingress Tools
+      url: /ingress-tools/
+    - title: Tasker & 快捷指令
+      url: ./lists/smartphonesmart
+    - title: 小屏手机索引
+      url: ./lists/compact-phones
+
+  - title: 最新
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: feed
+      show_more_url: ./feed.xml
+
+  - title: 理性
+    entries:
+    - title: 技术
+      post_list:
+        limit: 2
+        category: tech
+        show_more: true
+        show_more_text: ...
+        show_more_url: ./tech
+    - title: 汇编
+      post_list:
+        limit: 2
+        category: lists
+        show_more: true
+        show_more_text: ...
+        show_more_url: ./lists
+    - title: 种草
+      post_list:
+        limit: 2
+        category: smzdm
+        show_more: true
+        show_more_text: ...
+        show_more_url: ./smzdm
+
+  - title: 感性
+    entries:
+    - title: 胡思乱想
+      post_list:
+        limit: 2
+        category: prose
+        show_more: true
+        show_more_text: ...
+        show_more_url: ./prose
+    - title: 诗
+      post_list:
+        limit: 2
+        category: poetry
+        show_more: true
+        show_more_text: ...
+        show_more_url: ./poetry
+    - title: 歌
+      post_list:
+        limit: 2
+        category: music
+        show_more: true
+        show_more_text: ...
+        show_more_url: ./music

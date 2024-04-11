@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<nav id="top"><a href="{{ site.baseurl }}" style="text-decoration: none;">🏠</a></nav>
+
+<article>
+  
+  <h1>{{ page.title }}</h1>
+  
+  {{ content }}
+
+</article>
+
+<footer id="gototop" style="text-align: center; visibility: hidden;"><a href="#top" style="text-decoration: none;">🔝</a></footer>
+
+<script>
+
+  const pageHeight = document.body.scrollHeight;
+  const viewportHeight = window.innerHeight;
+  if (pageHeight > viewportHeight) {
+    document.getElementById('gototop').style.visibility = 'visible';
+  } else {
+    document.getElementById('gototop').style.visibility = 'hidden';
+  }
+
+  function wrap(el, wrapper) {
+      el.parentNode.insertBefore(wrapper, el);
+      wrapper.appendChild(el);
+  }
+  Array.from(document.getElementsByTagName('table')).forEach(el => {
+      const wrapper = document.createElement('section')
+      wrapper.style.overflowX = 'auto';
+      wrap(el, wrapper)
+  })
+
+</script>
